@@ -1,0 +1,38 @@
+.card {
+  width: 500px;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 20px;
+}
+button {
+  font-size: 20px;
+  border: none;
+  color: #ffffff;
+  background-color: #1ad4c5;
+  border-radius: 40px;
+  padding: 5px 20px 5px 20px;
+}
+p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+img {
+  width: 35px;
+  height: 35px;
+  border-radius: 9999px;
+  /* cover 전체 다 안나와도 되니까 최적화 시켜주는것 */
+  /* contain 전체 다 나와야됨 */
+  object-fit: cover;
+  /* img,a,button=>inline */
+  /* 그 외 태그 => block(부모 끝까지 차지함) */
+  display: block;
+  margin: 0 auto;
+}
+.smallText {
+  font-size: 15px;
+}

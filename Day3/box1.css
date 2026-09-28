@@ -1,0 +1,23 @@
+.card {
+  border-radius: 10px;
+  border: none;
+  background-color: brown;
+  width: 500px;
+  padding: 10px 0 10px 0;
+}
+
+/* .profile {
+  border-radius: 9999px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+} */
+
+.name {
+  font-size: 40px;
+  text-align: center;
+}
+.job {
+  font-size: 30px;
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+.toolBox {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.btnArea {
+}
+.ably {
+  color: crimson;
+}
+.btnArea > button {
+  font-size: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.btnArea:hover > button {
+  background-color: aquamarine;
+  color: red;
+}

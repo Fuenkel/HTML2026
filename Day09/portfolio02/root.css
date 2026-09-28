@@ -1,0 +1,11 @@
+:root {
+  /* 폰트 설정 */
+  font-family: "Suit";
+
+  /* TEXT DECO NONE */
+  text-decoration: none;
+  /* 영문/긴 단어: 폭을 넘어가면 강제 줄바꿈 */
+  overflow-wrap: anywhere;
+  /* 한글: 단어 단위로 줄바꿈 */
+  word-break: keep-all;
+}

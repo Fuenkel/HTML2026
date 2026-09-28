@@ -1,0 +1,78 @@
+footer {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  background: #333;
+  padding: 100px 0px;
+  border-top: 1px solid #888;
+}
+
+footer > .context {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+}
+
+footer > .context > .up-line {
+  width: 100%;
+  border-bottom: 1px solid #777;
+  padding-bottom: 20px;
+
+  /* border: 1px solid blue; */
+}
+
+footer > .context > .up-line > h1 {
+  float: left;
+  font: bold 24px / 1 "arial";
+  color: #666;
+}
+
+footer > .context > .up-line > ul {
+  float: right;
+  margin: 0 auto;
+}
+
+footer > .context > .up-line > ul > li {
+  float: left;
+  margin-left: 20px;
+}
+footer > .context > .up-line > ul > li > a {
+  font: bold 14px/1 "arial";
+  color: #666;
+  text-decoration: none;
+}
+footer > .context > .up-line > ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer > .context > .down-line {
+  width: 100%;
+  padding-top: 20px;
+}
+
+footer > .context > .down-line > address {
+  width: 100%;
+  font: 12px / 1.3 "arial";
+  color: #777;
+  margin-bottom: 20px;
+}
+footer > .context > .down-line > p {
+  width: 100%;
+  font: 12px / 1 "arial";
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  footer > .context > .up-line {
+    padding-left: 20px; /* 양쪽 여백을 주어 글자가 벽에 붙지 않게 함 */
+    padding-right: 20px;
+    box-sizing: border-box; /* 패딩이 전체 폭에 포함되도록 설정 */
+  }
+  footer > .context > .down-line {
+    padding-left: 20px; /* 양쪽 여백을 주어 글자가 벽에 붙지 않게 함 */
+    padding-right: 20px;
+    box-sizing: border-box; /* 패딩이 전체 폭에 포함되도록 설정 */
+  }
+}

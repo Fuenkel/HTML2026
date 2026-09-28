@@ -1,0 +1,143 @@
+header {
+  font-family:
+    Helvetica,
+    Arial,
+    Doroid Sans,
+    "メイリオ",
+    Meiryo,
+    "ヒラギノ角ゴ Pro W3",
+    "Hiragino Kaku Gothic Pro",
+    sans-serif;
+  font-size: 100%;
+  font-size: 14px;
+  line-height: 1.125;
+}
+
+header a {
+  outline: none;
+}
+
+/* ===== スクエニヘッダ ===== */
+.sqex-header {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* ===== スクエニメニューエリア ===== */
+.sqex-header-menu {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 100px;
+  }
+
+  .sqex-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    z-index: 10000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .sqex-head-main {
+    position: relative;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1920px;
+  }
+
+  .sqex-header-main:before,
+  .sqex-header-main:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    background-color: #fff;
+  }
+  .sqex-header-main:before {
+    left: -50%;
+  }
+  .sqex-header-main:after {
+    right: -50%;
+  }
+
+  /* ===== スクエニロゴ ===== */
+  .sqex-header-logo {
+    width: 24%;
+    background-color: #fff;
+  }
+
+  .sqex-header-logo a {
+    display: flex;
+    -webkit-box-align: center;
+    width: 100%;
+    height: 100px;
+  }
+
+  .sqex-header-logo a img {
+    margin-left: 10%;
+    width: 72%;
+  }
+
+  /* ===== PCサイズ用メニュー ===== */
+  .sqex-large-menu {
+    width: 76%;
+  }
+  /* ----- メニューボタン共通 ----- */
+  .sqex-large-menu-button {
+    position: relative;
+    display: block;
+  }
+  /* ボタン用ラベル */
+  .sqex-large-menu-button span {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .sqex-large-menu-button:hover span {
+    color: #c90506;
+    background-position: center center;
+  }
+  .sqex-large-menu-button.active span {
+    color: #c90506;
+    background-position: center center;
+  }
+  /* ----- 上側メニュー ----- */
+  .sqex-large-menu-main:after,
+  .sqex-large-menu-sub:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .sqex-large-menu-main {
+    background-color: #fff;
+  }
+  .sqex-large-menu-main a {
+    text-align: center;
+    color: #000;
+  }
+  /* 上側メニュー左 */
+  .sqex-large-menu-main-l {
+    display: flex;
+    float: left;
+  }
+  /* ----- 上側メニューボタン ----- */
+  .sqex-large-menu-main-l .sqex-large-menu-button {
+    height: 60px;
+  }
+}

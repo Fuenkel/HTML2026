@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  flex-direction: column; /* 요소를 세로로 줄지어 정렬 */
+  align-items: center; /* 가로 기준 가운데 정렬 */
+  justify-content: center;
+  gap: 1px; /* 요소들 사이의 위아래 간격 */
+  min-height: 100vh; /* 화면 전체 높이 중앙에 배치 */
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+p {
+  font-weight: bolder;
+  font-size: 8px;
+}
+
+.login {
+  color: white;
+  background-color: rgb(69, 69, 128);
+  border: none;
+  border-radius: 4px;
+  padding: 3px 40px 3px 40px;
+  font-size: 8px;
+}
+
+.switch {
+  color: skyblue;
+  background-color: white;
+  border: none;
+  padding: 3px 40px 3px 40px;
+  font-size: 8px;
+}

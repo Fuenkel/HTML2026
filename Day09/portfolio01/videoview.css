@@ -1,0 +1,96 @@
+.videoview {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background: #000;
+  position: relative;
+  overflow: hideen;
+  padding: top 250px;
+}
+
+.videoview > video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.videoview > .inner {
+  display: flex;
+  flex-direction: column;
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 250px;
+}
+
+.videoview > .inner > h1 {
+  font: normal 120px / 1 "arial";
+  color: #fff;
+  margin-bottom: 20px;
+  /* 텍스트 삐져나옴 방지 속성 추가 */
+  word-break: keep-all; /* 한글: 단어 단위로 줄바꿈 */
+  overflow-wrap: anywhere; /* 영문/긴 단어: 폭을 넘어가면 강제 줄바꿈 */
+}
+.videoview > .inner > p {
+  font: 16px / 1.4 "arial";
+  color: #888;
+  margin-bottom: 60px;
+
+  /* 텍스트 삐져나옴 방지 속성 추가 */
+  word-break: keep-all; /* 한글: 단어 단위로 줄바꿈 */
+  overflow-wrap: anywhere; /* 영문/긴 단어: 폭을 넘어가면 강제 줄바꿈 */
+}
+
+.videoview > .inner > a {
+  display: block;
+  width: 400px;
+  height: 30px;
+  border: 1px solid #bbb;
+  font: bold 11px / 30px "arial";
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  /* transition: all 0.5s; */
+  text-decoration: none;
+}
+
+.videoview > .inner > a > .click {
+  transition: all 0.5s;
+}
+
+.videoview > .inner > a > .click:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .videoview > .inner {
+    width: 100%; /* 화면 가로 100% 채움 */
+    max-width: 100%; /* 최대 너비 제한 해제 */
+    padding-left: 20px; /* 양쪽 여백을 주어 글자가 벽에 붙지 않게 함 */
+    padding-right: 20px;
+    box-sizing: border-box; /* 패딩이 전체 폭에 포함되도록 설정 */
+  }
+  .videoview > .inner > h1 {
+    font-size: 60px;
+  }
+  .videoview > .inner > p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .videoview > .inner > p > br {
+    display: none;
+  }
+
+  .videoview > .inner > a {
+    width: 200px;
+    height: 30px;
+
+    border: 1px solid #bbb;
+    font: bold 10px / 30px;
+  }
+}

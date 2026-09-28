@@ -1,0 +1,37 @@
+.card {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 40px 20px 40px;
+}
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 9999px;
+  object-fit: cover;
+  /* margin-left: 100px; */
+  /* 가운데 배치 */
+  margin: 0 auto 0 auto;
+}
+
+.title {
+  font-size: 40px;
+  text-align: left;
+}
+.context {
+  font-size: 30px;
+  color: gray;
+  margin-bottom: 30px;
+}
+.btn {
+  width: 100%;
+  font-size: 35px;
+  color: #000000;
+  background-color: #edeef0;
+  border-radius: 8px;
+  border: none;
+  padding: 0 50px 0 50px;
+}

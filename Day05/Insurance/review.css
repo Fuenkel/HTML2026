@@ -1,0 +1,25 @@
+.categoryBox {
+  width: 200px;
+  background-color: #ffffff;
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+}
+
+.box {
+  font-family: "Paperozi";
+  font-weight: 400;
+  font-size: 4px;
+  padding: 10px;
+}

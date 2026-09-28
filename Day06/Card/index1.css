@@ -1,0 +1,39 @@
+.deck {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-image: url("japan1.jpeg");
+  background-size: cover;
+  color: white;
+  /* 백그라운드 사진 위치 조정 가로 세로 */
+  /* background-position-x :20% */
+  /* background-position-y:50% */
+}
+
+.category {
+  font-size: 10px;
+  font-weight: 400;
+  width: fit-content;
+  text-decoration: underline;
+  /* border-botom: 1px solid black; */
+  text-underline-offset: 5px;
+}
+.title {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.desc {
+  font-size: 12px;
+  font-weight: 400;
+}

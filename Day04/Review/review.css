@@ -1,0 +1,35 @@
+.card {
+  width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 공통 스타일 */
+.apple,
+.google {
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 4px 20px;
+
+  width: 240px; /* 동일한 너비 지정 */
+  box-sizing: border-box; /* 패딩과 테두리를 너비에 포함 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.apple {
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.google {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+}

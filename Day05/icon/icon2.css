@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  position: relative;
+}
+.check {
+  font-size: 30px;
+}
+
+.noti {
+  color: white;
+  font-size: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: crimson;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.heart {
+  font-size: 8px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: crimson;
+}
+
+.coffeeBean {
+  font-size: 8px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: brown;
+}
+
+.burnedMeat {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.fire {
+  font-size: 30px;
+  color: red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}

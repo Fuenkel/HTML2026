@@ -1,0 +1,68 @@
+.menu {
+  width: 400px;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.beverage {
+  border-radius: 20px;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.album {
+  transition: all 1s;
+}
+
+.album:hover {
+  transform: scale(1.2) skew(-10deg, -10deg);
+}
+.beverage > span {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.soldOut {
+  border-radius: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+.blur {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: 1px solid black;
+  opacity: 0.5;
+}
+
+.outment {
+  z-index: 1;
+}
+.crossMark {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+}
+
+.soldOut:hover {
+  transform: translateX(-10px) translateY(10px);
+}

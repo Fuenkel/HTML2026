@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: fit-content;
+}
+.icon {
+  position: relative;
+}
+
+.check {
+  font-size: 30px;
+}
+
+.noti {
+  color: white;
+  font-size: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: crimson;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* 종속되는 점을 우측 상단에 맞추는 것 */
+  right: 0px;
+  top: 0px;
+}
+
+.ribbon {
+  color: #ff7979;
+  font-size: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}

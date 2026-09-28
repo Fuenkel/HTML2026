@@ -1,0 +1,37 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  /* 전환하는데 걸리는 시간 */
+  transition: all 1s;
+}
+
+.box:hover {
+  background-color: red;
+  transform: scale(1.5);
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 > button {
+  border: 1px solid white;
+  color: white;
+  padding: 2px 4px;
+  background-color: transparent;
+  opacity: 0;
+  transition: all 1s;
+  /* 마우스 모양 바꿔주는거 */
+  cursor: pointer;
+}
+
+.box2:hover > button {
+  opacity: 1;
+}

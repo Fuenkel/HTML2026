@@ -1,0 +1,86 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #000000;
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000000;
+  display: flex;
+  flex-direction: end;
+  justify-content: start;
+  align-items: end;
+  color: white;
+}
+
+.color1 {
+  background-color: #cd84f1;
+}
+.color2 {
+  background-color: #c56cf0;
+}
+.color3 {
+  background-color: #32ff7e;
+}
+.color4 {
+  background-color: #3ae374;
+}
+.color5 {
+  background-color: #ffcccc;
+}
+.color6 {
+  background-color: #ffb8b8;
+}
+.color7 {
+  background-color: #7efff5;
+}
+.color8 {
+  background-color: #67e6dc;
+}
+.color9 {
+  background-color: #ff4d4d;
+}
+.color10 {
+  background-color: #ff3838;
+}
+.color11 {
+  background-color: #18dcff;
+}
+.color12 {
+  background-color: #17c0eb;
+}
+.color13 {
+  background-color: #ffaf40;
+}
+.color14 {
+  background-color: #ff9f1a;
+}
+.color15 {
+  background-color: #7d5fff;
+}
+.color16 {
+  background-color: #7158e2;
+}
+.color17 {
+  background-color: #fffa65;
+}
+.color18 {
+  background-color: #fff200;
+}
+.color19 {
+  background-color: #4b4b4b;
+}
+.color20 {
+  background-color: #3d3d3d;
+}

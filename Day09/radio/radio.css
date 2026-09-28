@@ -1,0 +1,64 @@
+/* 기본 레이아웃 구성 */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* 왼쪽 사이드바 */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-right: 1px solid #ddd;
+  z-index: 10;
+}
+
+.sidebar .btn {
+  padding: 12px 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.sidebar .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* 오른쪽 콘텐츠 영역 기본 스타일 */
+.content-area {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff; /* 기본 배경색 */
+  transition: all 0.5s ease; /* 배경 부드럽게 전환 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===================================================
+   💡 핵심: :hover 상태에 따른 오른쪽 배경 변경 (:has 사용)
+   =================================================== */
+
+/* .btn1에 마우스를 올렸을 때 */
+.container:has(.btn1:hover) .content-area {
+  background-color: #ffebeb;
+  /* background-image: url('image1.jpg'); 이미지 적용 시 */
+}
+
+/* .btn2에 마우스를 올렸을 때 */
+.container:has(.btn2:hover) .content-area {
+  background-color: #ebf5ff;
+}
+
+/* .btn3에 마우스를 올렸을 때 */
+.container:has(.btn3:hover) .content-area {
+  background-color: #ebffeb;
+}

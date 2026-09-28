@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="kakao.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <img class="logo" src="kakao.png" alt="" />
+
+      <div>
+        <input
+          class="inputText"
+          type="text"
+          placeholder="카카오메일 아이디, 이메일, 전화번호"
+        />
+        <hr />
+        <input class="inputText" type="password" placeholder="비밀번호" />
+        <hr />
+        <button class="circleShape circleShape.active">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-check-icon lucide-circle-check"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+        </button>
+        <span>로그인 상태 유지</span><br />
+        <button class="loginBox">로그인</button>
+        <hr />
+        <p>또는</p>
+        <hr />
+        <button class="qrloginBox">QR코드 로그인</button><br />
+        <button class="noborderButton">회원가입</button>
+        <button class="noborderButton">카카오계정</button>
+        <button class="noborderButton">비밀번호 찾기</button>
+      </div>
+    </main>
+  </body>
+</html>
